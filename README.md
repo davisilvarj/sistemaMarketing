@@ -1,2 +1,2 @@
 # sistemaEventos
-Projeto de sistema de solicitação de eventos, na faculdade Presbiteriana Mackenzie Rio
+Projeto de sistema de solicitação de serviço para equipe de marketing da faculdade Presbiteriana Mackenzie Rio.
