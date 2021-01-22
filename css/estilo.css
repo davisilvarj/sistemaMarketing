@@ -1,0 +1,176 @@
+body{
+	background-color: #6c757d;
+}
+
+button{
+	position: relative;
+	float: right;
+}
+/*Login*/
+	.painel-login{
+		padding: .5em 2em;
+		width: 100vw;
+		height: 100vh;
+		background: #fff;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	.painel-box{
+		padding: .5em;
+		width: 35em;
+		height: 21em;
+	}
+	.painel-card{
+		height: 20em;
+	}
+	.painel-card label, input{
+		margin: .5em 0;
+	}
+
+/*menu*/
+	.img-painel{
+		position: relative;
+		margin-top: .5em;
+	}
+
+	.painel{
+		margin: 0;
+		width: 15vw;
+		height: 100vh;
+		background: #6c757d;
+		color: #fff;
+		position: fixed;
+		float: left;
+		}
+
+		.painel nav ul li a{
+			color: #fff;
+		}
+		.painel nav ul li a:hover{
+			color: #000;
+			background-color: #fff;
+		}
+	.botao-pesquisa{
+		height: 2.5em;
+		margin-top: .5em;
+	}
+
+/*FORMULARIO*/
+.areaformulario{
+	background-color: #6c757d;
+	width: 85vw;
+	position: relative;
+	float: right;
+	}
+
+
+
+/*CONTROLE*/
+.areacontrole{
+	width: 100vw;
+	height: 100vh;
+	background-color: #6c757d;
+	background-repeat: repeat-y;
+}
+
+#areadados{
+	width: 50em;
+}
+
+
+/*RESPONSIVO*/
+	@media (max-width: 60em){
+		.painel{
+			clear: none;
+			position: relative;
+			width: 100%;
+			height: 22em;
+		}
+
+		.painel figure{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.img-painel{
+			position: relative;
+			margin-top: .5em;
+		}
+		.areaformulario{
+			width: 100vw;
+		}	
+	} 
+
+
+
+/*ACCORDION*/
+	.accordion{
+	  background-color: #eee;
+	  color: #444;
+	  cursor: pointer;
+	  padding: 18px;
+	  width: 100%;
+	  border: none;
+	  text-align: left;
+	  outline: none;
+	  font-size: 15px;
+	  transition: 0.4s;
+	}
+
+	.active, .accordion:hover {
+	  background-color: #ccc; 
+	}
+
+	.panel {
+	  padding: 0 18px;
+	  display: none;
+	  background-color: white;
+	  overflow: hidden;
+	}
+
+
+
+	.item-selecionado{
+		display:none;
+	}
+
+	.accordion-item label{
+	    display:block;
+	    border:1px solid #ccc;
+	    background:#e5e5e5;
+	    cursor:pointer;
+		padding:5px 3px;
+	}
+	.accordion-content{
+	    height: 0px;
+	    overflow: hidden;
+	    -webkit-transition: height 0.3s ease-in-out;
+	    -moz-transition: height 0.3s ease-in-out;
+	    -o-transition: height 0.3s ease-in-out;
+	    -ms-transition: height 0.3s ease-in-out;
+	    transition: height 0.3s ease-in-out;
+
+	 }
+
+	[id^=accordion]:checked ~ .accordion-content {
+	    height: 35%;
+
+	}
+
+@supports (-ms-ime-align:auto) {
+[id^=accordion]:checked ~ .accordion-content {
+	    height: 100%;
+
+	}
+}
+
+	.rotuloFormulario{
+		display:block;
+	    border:1px solid #ccc;
+	    background:#e5e5e5;
+	    cursor:pointer;
+		padding:5px 3px;
+	}
+
